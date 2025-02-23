@@ -1,0 +1,52 @@
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+section{
+  scroll-margin-top: 25px;
+}
+body {
+  color: #1a202c;
+  /* Equivalent to text-gray-900 */
+  background-color: #ffffff;
+  /* Equivalent to bg-white */
+}
+
+.skill-card{
+  height: 290px;
+}
+
+.custom-card {
+  opacity: 1;
+  transform: none;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  /* Move transition to CSS */
+}
+
+.custom-card:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f7fafc;
+  /* Equivalent to bg-gray-100 */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6366f1;
+  /* Equivalent to bg-indigo-500 */
+  border-radius: 9999px;
+  /* Equivalent to rounded-full */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4f46e5;
+  /* Equivalent to bg-indigo-600 */
+}
