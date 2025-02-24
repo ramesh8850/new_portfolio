@@ -76,7 +76,7 @@ export default function Contact() {
                                     >
                                         <Mail className="flex-shrink-0 me-2 text-white" style={{ width: '1.25rem', height: '1.25rem' }} />
                                         <div>
-                                            <a href="mailto:john.doe@example.com" className="text-white text-decoration-none">
+                                            <a href="mailto:rameshgoud8850@gmail.com" className="text-white text-decoration-none">
                                                 rameshgoud8850@gmail.com
                                             </a>
                                         </div>
@@ -87,7 +87,7 @@ export default function Contact() {
                                     >
                                         <Phone className="flex-shrink-0 me-2 text-white" style={{ width: '1.25rem', height: '1.25rem' }} />
                                         <div>
-                                            <a href="tel:+15551234567" className="text-white text-decoration-none">
+                                            <a href="tel:+917569414038" className="text-white text-decoration-none">
                                                 +91 7569414038
                                             </a>
                                         </div>
