@@ -1,9 +1,29 @@
+import React, { useState,useEffect } from "react";
 import { motion } from 'framer-motion';
 import { CiMail } from "react-icons/ci";
 import { VscGithubAlt } from "react-icons/vsc";
 import { LuLinkedin } from "react-icons/lu";
 
 export default function Hero() {
+    const [displayText, setDisplayText] = useState('');
+    const [isTypingComplete, setIsTypingComplete] = useState(false);
+    const fullName = 'Ramesh Bheemanapally';
+
+    useEffect(() => {
+        let currentIndex = 0;
+        const interval = setInterval(() => {
+            if (currentIndex <= fullName.length) {
+                setDisplayText(fullName.slice(0, currentIndex));
+                currentIndex++;
+            } else {
+                clearInterval(interval);
+                setIsTypingComplete(true);
+            }
+        }, 150);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <section id="home" className="d-flex min-vh-100 align-items-center justify-content-center bg-light" style={{
             background: "linear-gradient(to bottom right, #eef2ff, #ffffff, #f3e8ff)",
@@ -29,7 +49,18 @@ export default function Hero() {
                     className="fw-bold text-dark display-4"
                 >
                     <span className="d-block">Hi, I'm</span>
-                    <span className="d-block text-primary">Ramesh Bheemanapally</span>
+                    <span className="d-block" style={{ color: '#4F46E5' }}>
+                        {displayText}
+                        {!isTypingComplete && (
+                            <motion.span
+                                animate={{ opacity: [0, 1, 0] }}
+                                transition={{ repeat: Infinity, duration: 0.8 }}
+                                className="d-inline-block ms-1"
+                            >
+                                |
+                            </motion.span>
+                        )}
+                    </span>
                 </motion.h1>
 
                 <motion.p
