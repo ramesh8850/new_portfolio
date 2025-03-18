@@ -61,12 +61,13 @@ export default function Resume() {
                             <h5 className="text-primary">Kraf Technologies</h5>
                             <p className="text-muted">Feb 2025 - Present</p>
                             <p>
-                                • Developed and maintained web applications using React.js and
-                                Node.js
-                                <br />• Implemented RESTful APIs and integrated them with frontend
-                                applications
-                                <br />• Collaborated with senior developers on various projects
-                                <br />• Participated in code reviews and team meetings
+                                • Designed intuitive UI/UX using Figma for a seamless user experience
+                                <br />• Developed a support chatbot in React.js for user assistance
+                                <br />• Built a real-time chat system with WebSockets for instant communication
+                                <br />• Integrated Google and GitHub authentication APIs via Supabase
+                                <br />• Managed authentication, chat storage, and user data using Supabase
+                                <br />• Collaborated with senior developers, participated in code reviews and team meetings
+
                             </p>
                         </div>
                     </div>
